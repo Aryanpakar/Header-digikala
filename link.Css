@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Shabnam:wght@400;700&display=swap');
+
+body {
+    font-family: 'Shabnam', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #fffb00, #9900ff,rgb(0, 174, 255),rgb(255, 251, 0), #00aeff, #e100ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+
+
+.box {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    animation: boxFadeIn 2s ease-in-out;
+}
+
+h1 {
+    color: #333;
+    animation: textFocusIn 2s ease-in-out;
+}
+
+input, button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    animation: inputSlideIn 2s ease-in-out;
+}
+
+button {
+    background-color: #23d5ab;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23a6d5;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes boxFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes textFocusIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes inputSlideIn {
+    from { opacity: 0; transform: translateY(200px); }
+    to { opacity: 1; transform: translateY(0); }
+}
